@@ -1,5 +1,4 @@
 :root{--ink:#1d2033;--indigo:#232c5c;--indigo2:#161c40;--saffron:#e9a23b;--sage:#dfe7dc;--mist:#f4f6f1;--white:#fff;--muted:#5d6279;--wa:#1faa59;--r:18px}
-@media(prefers-color-scheme:dark){:root{--ink:#eceef7;--mist:#12162f;--white:#1a1f42;--sage:#232a52;--muted:#aab0cc}}
 *{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
 body{font-family:'Karla',system-ui,sans-serif;color:var(--ink);background:var(--mist);line-height:1.65;font-size:17px}
 h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.15}
@@ -45,3 +44,18 @@ footer{background:var(--indigo2);color:#c9cde6;padding:3.5rem 0 5.5rem}footer .g
 @media(max-width:900px){.hero .g,.split,.g2{grid-template-columns:1fr}.g3,.g4,.steps{grid-template-columns:1fr 1fr}.gal{grid-template-columns:1fr 1fr}.gal .ph:nth-child(1),.gal .ph:nth-child(6){grid-column:auto}.burger{display:block}
 nav ul{display:none;position:absolute;left:0;right:0;top:100%;background:var(--indigo2);flex-direction:column;padding:1.2rem 4%;align-items:flex-start}nav ul.open{display:flex}.collage .ph:first-child{min-height:260px}}
 @media(max-width:560px){.g3,.g4,.steps{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.fab span{display:none}}
+/* White theme */
+:root{--ink:#1d2033;--mist:#fff;--white:#fff;--sage:#f6f8fc;--muted:#5d6279;--line:#e4e7f0}
+body{background:#fff}
+header{background:#fff;color:var(--indigo);border-bottom:1px solid var(--line)}
+.burger{color:var(--indigo)}nav a{color:var(--ink)}nav a:hover,nav a.on{color:var(--indigo);box-shadow:0 2px 0 var(--saffron)}
+nav .btn.wa{color:#fff;box-shadow:none}
+.hero{background:#fff;color:var(--ink)}.hero h1{color:var(--indigo)}.hero p{opacity:1;color:var(--muted)}
+.strip{background:#fdf1dc}
+.card{border:1px solid var(--line);box-shadow:none}
+.pagehead{background:#f6f8fc;color:var(--ink);border-bottom:1px solid var(--line)}.pagehead h1{color:var(--indigo)}.pagehead p{opacity:1;color:var(--muted)}
+.band{background:var(--indigo);color:#fff}
+.steps div,blockquote,details{border:1px solid var(--line)}
+input,select,textarea{border-color:#cfd4e4}
+footer{background:#f6f8fc;color:var(--muted);border-top:1px solid var(--line)}footer h3{color:var(--indigo)}footer a{color:var(--ink)}
+@media(max-width:900px){nav ul{background:#fff;border-bottom:1px solid var(--line)}}
